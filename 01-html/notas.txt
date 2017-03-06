@@ -16,3 +16,4 @@ pip install docker-compose
 
 // Ejecutar docker compose
 docker-compose up
+sudo docker-compose -f docker-compose.prod.yml up
