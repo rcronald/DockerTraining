@@ -1,0 +1,10 @@
+FROM nginx:latest
+MAINTAINER Ronald Requena <rcronald@gmail.com>
+
+RUN echo "Building from Dockerfile"
+RUN mkdir /usr/share/nginx/html/subdir
+
+COPY html/index.html /usr/share/nginx/html/index.html
+COPY subdir/index.html /usr/share/nginx/html/subdir/index.html
+COPY subdir/xD.html /usr/share/nginx/html/subdir/xD.html
+COPY subdir/xD.txt /usr/share/nginx/html/subdir/xD.txt

@@ -1,0 +1,18 @@
+
+
+sudo docker run --name mynginx -v $(pwd)/html:/usr/share/nginx/html -v $(pwd)/subdir:/usr/share/nginx/html/subdir -p 8080:80 -d nginx
+
+
+// Docker File crea una imagen localmente con una configuración y archivos
+sudo docker build -t dockerfile .
+
+// Ejecutar docker file
+sudo docker run --name mynginx -p 8080:80 -d dockerfile
+
+
+
+// Instalar docker-compose
+pip install docker-compose
+
+// Ejecutar docker compose
+docker-compose up
